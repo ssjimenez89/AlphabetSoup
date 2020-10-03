@@ -256,16 +256,6 @@ public class SopaDePalabrasServiceImpl implements SopaDePalabrasService {
             List<Coordenada> coordDePalabrasEncontradas = this.alphabetSoup.getSopaDePalabras().getCoordenasDePalabrasEncontradas();
             List<String> coordenadasDePalabrasString = new ArrayList<>();
 
-            /*coordenadasDePalabrasString =  coordenadasDePalabras.stream().map(it -> {
-                String coordenadas = "";
-                int coordenadaAlturaInicial = it.getCoordenadaAlturaInicial() +1;
-                int coordenadaAnchoInicial = it.getCoordenadaAnchoInicial() +1;
-                int coordenadaAlturaFinal = it.getCoordenadaAlturaFinal() +1;
-                int coordenadaAnchoFinal = it.getCoordenadaAnchoFinal() +1;
-                coordenadas =  "(" + coordenadaAlturaInicial + "," + coordenadaAnchoInicial + ")" + " " + "(" + coordenadaAlturaFinal + "," + coordenadaAnchoFinal + ")";
-                return coordenadas;
-            }).collect(Collectors.toList());
-*/
             final int[] contCoordenadas = {0};
             final boolean[] coordEncontradas = {false};
 
