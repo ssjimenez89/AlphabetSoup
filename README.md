@@ -12,12 +12,11 @@ Lenguaje de programación: Java
 Marco de Trabajo: Spring Boot 
 
 
-                               -------- Respuestas al Ejercicio Sitrack --------
-							   
+                               -------- Respuestas al Ejercicio Sitrack --------							   
 							   
 							   
 
-                                         ---- 1 - Problema ----
+ 1 - Problema 
  
 Explicación del proyecto AlphabetSoup y del algoritmo realizado.
 					
@@ -47,7 +46,7 @@ Importante!!!: Con el objetivo de que el algoritmo pueda ser probado fácilmente
  
  
  
- ---- 2 - Web Services ----
+ 2 - Web Services 
  
 Explicación del Web Service AlphabetSoup.
 
@@ -243,7 +242,7 @@ En este Endpoint si las coordenadas son Válidas además de notificarlo con un m
 
 
 
- ---- 3 - Repositorio ----
+ 3 - Repositorio 
  
 Explicación de cómo configurar el entorno para correr el código de AlphabetSoup y poder analizarlo.
 
@@ -309,12 +308,12 @@ Como parte de la respuesta a este Ejercicio también se encuentra la documentaci
 
 
 
----- 4 - Repositorio ----
+4 - Repositorio 
  
 No he trabajo antes con Docker, aunque estoy informado teóricamente de que se utiliza para realizar Contenedores donde se Despliegan las Aplicaciones.                      
 
 
----- 5 - Propuesta ----
+5 - Propuesta 
  
 Con el objetivo de agregarle un valor adicional al Juego se definieron 11 Categorias para que el usuario seleccione con cual tipo de palabra desea jugar la Sopa de Palabras.
 
