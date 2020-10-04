@@ -12,8 +12,8 @@ Lenguaje de programación: Java
 Marco de Trabajo: Spring Boot 
 
 
-                          ------- Respuestas al Ejercicio Sitrack ------								   
-
+                              ------- Respuestas al Ejercicio Sitrack ------	
+ 
  1 - Problema 
  
 Explicación del proyecto AlphabetSoup y del algoritmo realizado.
