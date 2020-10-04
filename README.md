@@ -132,7 +132,7 @@ Este Endpoint visualiza la Sopa de Palabras.
 En caso correcto muestra la Sopa de Palabras en texto plano y se lanza el (HttpStatus.OK):
 
 
-f|s|l|e|ñ|o|e|w|n|v|c|a|r|p|v|e|r|x|b|j|i|x|q|z|m|
+"f|s|l|e|ñ|o|e|w|n|v|c|a|r|p|v|e|r|x|b|j|i|x|q|z|m|"
 b|u|e|x|f|h|s|f|h|y|q|k|y|z|i|g|b|w|i|g|b|q|k|d|f|
 b|t|r|a|p|q|j|p|f|k|h|r|h|x|f|u|u|y|f|z|k|w|p|j|y|
 y|l|t|e|j|t|b|i|u|r|n|l|i|ñ|c|b|d|s|m|x|o|v|y|t|j|
