@@ -31,7 +31,7 @@ El algoritmo que crea la Sopa de Palabras puede ser probado completamente median
 Una vez insertados estos párametros se genera correctamente la Sopa de Palabras, mostrando el Ancho y Alto de la Sopa, las palabras a encontrar en la Sopa generadas aleatoriamente y en correspondencia con la Categoría seleccionada y la Sopa de Palabras generada.
 
 
-Importante!!!: Con el objetivo de que el algoritmo pueda ser probado fácilmente se muestran las Coordenada  par inicial (fila, columna) y par final (fila, columna) de las palabras a encontrar en la sopa, los valores de estos pares deben comenzar desde el 1, 2, 3, 4, 5, ... hasta el alto o ancho que se ingresó, correspondiendose el Alto a las Filas y el Ancho a las Columnas. 
+Importante!!!: Con el objetivo de que el algoritmo pueda ser probado fácilmente se muestran las Coordenada  par inicial (fila, columna) y par final (fila, columna) de las palabras a encontrar en la sopa, los valores de estos pares deben comenzar desde el 1, 2, 3, 4, 5, ... hasta el alto o ancho que se ingresó, correspondiéndose el Alto a las Filas y el Ancho a las Columnas. 
 
 
  Para comenzar a Jugar en la Sopa de Palabras:
@@ -47,6 +47,8 @@ Importante!!!: Con el objetivo de que el algoritmo pueda ser probado fácilmente
  2 - Web Services 
  
 Explicación del Web Service AlphabetSoup.
+
+Endpoint 1
 
 Endpoint para crear la sopa de palabras:
 
@@ -89,6 +91,7 @@ En caso incorrecto se lanza el error 400 (HttpStatus.BAD_REQUEST) y se muestra e
 }
 
 
+Endpoint 2
 
 Endpoint para visualizar la lista de palabras:
 
@@ -121,6 +124,7 @@ En caso que no haya una Sopa de palabras creada se lanza el error 400 (HttpStatu
 ]
 
 
+Endpoint 3
 
 Endpoint para visualizar la Sopa de Palabras:
 
@@ -165,6 +169,8 @@ En caso que no haya una Sopa de palabras creada se lanza el error 400 (HttpStatu
     "No existe una Sopa de Palabras creada"
 ]
 
+
+Endpoint 4
 
 Endpoint para indicar que hemos encontrado una Palabra en la Sopa:
 
@@ -267,19 +273,19 @@ Para configurar el entorno del proyecto y poder probarlo se debe realizar lo sig
    2.5- Para probar que funciona correctamente se puede ejecutar en la consola del sistema "java -versión" y como respuesta se debe ver la versión de Java instalada. 
 
 
-3- Instalar Apache-Maven en cualquiera de sus versiones, fue probado con la versión apache-maven-3.6.3-bin.zip descargada de https://maven.apache.org/download.cgi?Preferred=ftp://ftp.osuosl.org/pub/apache/, solo hay que descomprimir el archivo en "C:\Program Files" o en otra ruta y seguir los pasos siguientes para configurar su variable de entorno del sistema.
+3- Instalar Apache-Maven en cualquiera de sus versiones. Fue probado con la versión apache-maven-3.6.3-bin.zip descargada de https://maven.apache.org/download.cgi?Preferred=ftp://ftp.osuosl.org/pub/apache/, solo hay que descomprimir el archivo en "C:\Program Files" o en otra ruta y seguir los pasos siguientes para configurar su variable de entorno del sistema.
 
-   2.1- Para instalar Apache-Maven se deben configurar las variables de entorno de la jdk de Java primero y del Apache-Maven despues.
+   3.1- Para instalar Apache-Maven se deben configurar las variables de entorno de la jdk de Java primero y del Apache-Maven despues.
    
-   2.2- Para configurar la variable de entorno de apache-maven, primero se busca en la barra de búsqueda del menú Inicio "Variables de entorno" y selecciona "Editar las variables de entorno del sistema", una vez ahí se selecciona el botón "Variable de entorno" que se encuentra en la parte de abajo de la ventana.
+   3.2- Para configurar la variable de entorno de apache-maven, primero se busca en la barra de búsqueda del menú Inicio "Variables de entorno" y selecciona "Editar las variables de entorno del sistema", una vez ahí se selecciona el botón "Variable de entorno" que se encuentra en la parte de abajo de la ventana.
    
-   2.3- Una vez abierta la nueva ventana "Variables de entorno", se va al apartado "Variables del Sistema" y selecciona el botón "Nueva".
+   3.3- Una vez abierta la nueva ventana "Variables de entorno", se va al apartado "Variables del Sistema" y selecciona el botón "Nueva".
    
-   2.4- En el formulario que se abre se debe digitar como nombre de la variable "MAVEN_HOME" y como valor de la variable la ruta donde está la carpeta del maven, ejemplo: (C:\Program Files\apache-maven-3.6.3).
+   3.4- En el formulario que se abre se debe digitar como nombre de la variable "MAVEN_HOME" y como valor de la variable la ruta donde está la carpeta del maven, ejemplo: (C:\Program Files\apache-maven-3.6.3).
    
-   2.5- Por úlimo se debe editar la Variable del Sistema con nombre "Path" y añadir a su lista seleccionando el botón "Nuevo" "%MAVEN_HOME%\bin", al terminar se da Aceptar.
+   3.5- Por úlimo se debe editar la Variable del Sistema con nombre "Path" y añadir a su lista seleccionando el botón "Nuevo" "%MAVEN_HOME%\bin", al terminar se da Aceptar.
 
-   2.6- Para probar que funciona correctamente se puede ejecutar en la consola del sistema "mvn -v" y como respuesta se debe ver la versión de Maven instalada.  
+   3.6- Para probar que funciona correctamente se puede ejecutar en la consola del sistema "mvn -v" y como respuesta se debe ver la versión de Maven instalada.  
    
    
 4- Una vez instalada correctamete la jdk de Java y el apache-maven con sus respectivas variables de entorno del sistema para correr el proyecto solo se debe abrir la consola del sistema ( con "Ctr-R" y se escribe "cmd") y se va a la carpeta raiz del proyecto.
@@ -302,13 +308,26 @@ Para configurar el entorno del proyecto y poder probarlo se debe realizar lo sig
 
 
 
-Como parte de la respuesta a este Ejercicio también se encuentra la documentación del proyecto que se ha realizado en este documento y la publicación en GitHub del proyecto, especificamente en la url: https://github.com/ssjimenez89/AlphabetSoup.
+Como parte de la respuesta a este Ejercicio también se encuentra la documentación del proyecto que se ha realizado en este documento y la publicación en GitHub del proyecto, específicamente en la url: https://github.com/ssjimenez89/AlphabetSoup.
 
 
 
-4 - Repositorio 
+4 - Docker 
  
-No he trabajo antes con Docker, aunque estoy informado teóricamente de que se utiliza para realizar Contenedores donde se Despliegan las Aplicaciones.                      
+No he trabajo antes con Docker, aunque estoy informado teóricamente de que es una herramienta de virtualización. La cual a diferencia de las máquinas virtuales suele utilizarse paralevantar máquinas independientes con sistemas operativos ligeros y en muy poco tiempo. 
+
+Otra de sus principales ventajas por encima de las máquinas virtuales es que los contenedores Docker no instalan el Sistema operativo completo sino que comparten el núcleo y algunas otras bibliotecas core con el sistema anfitrión.  
+
+Los contenedores pueden desplegarse fácilmente en entornos de integración continúa, son ideales para obtener un entorno distribuido y clusterizado.
+
+Reducen considerablemente el tiempo de despliegue y actualización de las aplicaciones.        
+
+Nota: Intenté descargar Docker Desktop on Windows de la página oficial https://docs.docker.com/docker-for-windows/install/  para instalarlo y me da el siguiente mensaje: 
+
+"403 Forbidden
+Since Docker is a US company, we must comply with US export control regulations. In an effort to comply with these, we now block all IP addresses that are located in Cuba, Iran, North Korea, Republic of Crimea, Sudan, and Syria. If you are not in one of these cities, countries, or regions and are blocked, please reach out to https://support.docker.com "
+
+Todo parece indicar que está bloqueado para Cuba, si hubiese conseguido la instalación por otra vía hubiera intentado hacer el ejercicio.         
 
 
 5 - Propuesta 
@@ -337,7 +356,7 @@ EL sistema va guiando perfectamente la consecutividad de estos pasos iniciales s
 Como otro valor agregado al Ejercicio se definieron otros Endpoint para apoyar la interacción con el Algoritmo, los cuales se especifican a continuación:
 
 
-Primero especificar que en el Endpoint realizado para crear la Sopa de Palabras también se puede especificar la Categoría.
+Primero especificar que en el Endpoint 1 realizado para crear la Sopa de Palabras también se puede especificar la Categoría.
 
 Endpoint para crear la sopa de palabras:
 
@@ -356,13 +375,15 @@ POST http://localhost:8085/alphabetSoup
 }
 
 
-Este Endpoint permite ingresar también el párametro "c" indicando la Categoría de las Palabras a generar en la Sopa de Palabras.
+Este Endpoint permite ingresar también el parámetro "c" indicando la Categoría de las Palabras a generar en la Sopa de Palabras.
 
-  "c" - permite indicar el número de la Categoría con un número del 1 - 11, teniendo valor 1 por defecto.
+ "c" - permite indicar el número de la Categoría con un número del 1 - 11, teniendo valor de 1 por defecto.
   
   
   
 Otros Endpoint realizados:
+
+Endpoint 5
 
 Endpoint para Visualizar la lista de palabras que ya han sido encontradas en la Sopa de Palabras:
 
@@ -388,8 +409,9 @@ En caso que no haya una Sopa de palabras creada se lanza el error 400 (HttpStatu
 ]
 
 
+Endpoint 6
 
-Endpoint para Visualizar la Coordenadas de las palabras que se encuentran en la Sopa de Palabras. Este Endpoint tiene como único objetivo mostrar las Coordenadas par Inicial (fila, columna) y par Final (fila y columna) para que el juego se pueda jugar de forma rápida y verificar su correcto funcionamiento. Además se va especificando las Coordenadas que ya han sido encontradas anteriormente.
+Endpoint para Visualizar la Coordenadas de las palabras que se encuentran en la Sopa de Palabras. Este Endpoint tiene como único objetivo mostrar las Coordenadas par Inicial (fila, columna) y par Final (fila, columna) para que el juego se pueda jugar de forma rápida y verificar su correcto funcionamiento. Además se va especificando las Coordenadas que ya han sido encontradas anteriormente.
 
 GET http://localhost:8085/alphabetSoup/coordinate/44f09bae-d089-440c-81d1-34890886fc67
 
@@ -419,6 +441,7 @@ En caso que no haya una Sopa de palabras creada se lanza el error 400 (HttpStatu
 ]
 
 
+Endpoint 7
 
 Endpoint para Visualizar Datos de la Sopa de Palabras, puede ser útil para conocer las especificaciones de la Sopa de Palabras que está creada y con la que se está jugando en ese momento.
 
@@ -470,6 +493,7 @@ En caso que no haya una Sopa de palabras creada se lanza el error 400 (HttpStatu
 ]
 
 
+Endpoint 8
 
 Endpoint para Eliminar la Sopa de Palabras que se encuentra creada.
 
