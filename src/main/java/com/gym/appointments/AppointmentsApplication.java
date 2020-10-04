@@ -24,13 +24,6 @@ public class AppointmentsApplication {
         Scanner entrada = new Scanner(System.in);
         entrada = new Scanner(System.in);
 
-
-        int prueba = (int) (Math.random() * (20 - 15) );
-        int prueba1 = (int) (Math.random() * (20 - 15) + 15 );
-
-        System.out.println(prueba);
-        System.out.println(prueba1);
-
         int parAlturaInicial;
         int parAnchoInicial;
 

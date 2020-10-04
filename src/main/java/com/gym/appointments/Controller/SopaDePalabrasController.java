@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/host")
+//@RequestMapping("/api")
 public class SopaDePalabrasController {
 
     @Autowired
